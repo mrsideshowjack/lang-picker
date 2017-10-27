@@ -1,4 +1,47 @@
 # \<lang-picker\>
 
+`lang-picker` Language picker dropdown element, built with paper-dropdown-menu returns short language code eg: 'en'
+
+## Installation
+
+```
+$ bower install --save mrsideshowjack/lang-picker
+```
+
+## Usage
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="lang-picker.html">
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<lang-picker selected="{{lang}}"></lang-picker>
+```
 
 
+### Styling
+
+The following custom properties and mixins are available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--lang-picker-dropdown-width` | width of the dropdown | `100%`
+`--lang-picker-listbox-max-height` | max-height of the listbox | `250px`
+`--paper-input-container-focus-color | colour of the input container | `--primary-color, blue`
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
+
+## License
+
+(c) Jack Mason Apache License 2.0
