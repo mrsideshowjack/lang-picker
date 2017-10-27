@@ -1,3 +1,6 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/mrsideshowjack/lang-picker)
+
+
 # \<lang-picker\>
 
 `lang-picker` Language picker dropdown element, built with paper-dropdown-menu returns short language code eg: 'en'
