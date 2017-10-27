@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>lang-picker demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../lang-picker.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic lang-picker demo</h3>
+      <demo-snippet>
+        <template>
+          <lang-picker selected="{{lang}}"></lang-picker>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Styled lang-picker demo</h3>
+      <demo-snippet>
+        <template>
+          <lang-picker class="styled" selected="{{lang}}"></lang-picker>
+          <style is="custom-style">
+            lang-picker.styled{
+              --lang-picker-dropdown-width: 170px;
+              --lang-picker-listbox-max-height: 400px;
+              --paper-input-container-focus-color: green;
+            }
+          </style>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Label change lang-picker demo</h3>
+      <demo-snippet>
+        <template>
+          <lang-picker label="bob" selected="{{lang}}"></lang-picker>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
