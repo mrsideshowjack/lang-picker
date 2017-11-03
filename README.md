@@ -5,6 +5,8 @@
 
 `lang-picker` Language picker dropdown element, built with paper-dropdown-menu returns short language code eg: 'en'
 
+![](https://cl.ly/2W0o2L431z06/Screen%20recording%202017-11-03%20at%2011.45.36%20AM.gif)
+
 ## Installation
 
 ```
@@ -17,6 +19,7 @@ $ bower install --save mrsideshowjack/lang-picker
 ```
 <custom-element-demo>
   <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
     <link rel="import" href="lang-picker.html">
   </template>
 </custom-element-demo>
@@ -35,7 +38,7 @@ Custom property | Description | Default
 ----------------|-------------|----------
 `--lang-picker-dropdown-width` | width of the dropdown | `100%`
 `--lang-picker-listbox-max-height` | max-height of the listbox | `250px`
-`--paper-input-container-focus-color | colour of the input container | `--primary-color, blue`
+`--paper-input-container-focus-color` | colour of the input container | `--primary-color, blue`
 
 ## Contributing
 

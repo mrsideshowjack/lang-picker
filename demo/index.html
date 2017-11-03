@@ -22,7 +22,29 @@
       <h3>Basic lang-picker demo</h3>
       <demo-snippet>
         <template>
-          <lang-picker selected="{{lang}}"></lang-picker>
+          <dom-bind>
+            <template>
+
+              <h2>[[lang]]</h2>
+              <lang-picker selected="{{lang}}"></lang-picker>
+
+            </template>
+          </dom-bind>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Native lang-picker demo</h3>
+      <demo-snippet>
+        <template>
+          <dom-bind>
+            <template>
+
+              <h2>[[lang]]</h2>
+              <lang-picker selected-attr="native" selected="{{lang}}"></lang-picker>
+
+            </template>
+          </dom-bind>
         </template>
       </demo-snippet>
     </div>
@@ -30,14 +52,21 @@
       <h3>Styled lang-picker demo</h3>
       <demo-snippet>
         <template>
-          <lang-picker class="styled" selected="{{lang}}"></lang-picker>
-          <style is="custom-style">
-            lang-picker.styled{
-              --lang-picker-dropdown-width: 170px;
-              --lang-picker-listbox-max-height: 400px;
-              --paper-input-container-focus-color: green;
-            }
-          </style>
+          <dom-bind>
+            <template>
+
+              <h2>[[lang]]</h2>
+              <lang-picker class="styled" selected="{{lang}}"></lang-picker>
+              <style is="custom-style">
+                lang-picker.styled{
+                  --lang-picker-dropdown-width: 170px;
+                  --lang-picker-listbox-max-height: 400px;
+                  --paper-input-container-focus-color: green;
+                }
+              </style>
+
+            </template>
+          </dom-bind>
         </template>
       </demo-snippet>
     </div>
@@ -45,7 +74,14 @@
       <h3>Label change lang-picker demo</h3>
       <demo-snippet>
         <template>
-          <lang-picker label="bob" selected="{{lang}}"></lang-picker>
+          <dom-bind>
+            <template>
+
+              <h2>[[lang]]</h2>
+              <lang-picker label="bob" selected-attr="name" selected="{{lang}}"></lang-picker>
+
+            </template>
+          </dom-bind>
         </template>
       </demo-snippet>
     </div>
